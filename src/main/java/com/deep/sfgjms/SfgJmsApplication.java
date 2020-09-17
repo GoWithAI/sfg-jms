@@ -9,9 +9,8 @@ import org.apache.activemq.artemis.core.server.ActiveMQServers;
 @SpringBootApplication
 public class SfgJmsApplication {
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
 
-        // In production we do not use
         ActiveMQServer server = ActiveMQServers.newActiveMQServer(new ConfigurationImpl()
                 .setPersistenceEnabled(false)
                 .setJournalDirectory("target/data/journal")
